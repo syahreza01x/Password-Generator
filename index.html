@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator Gacha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <h1>🎲 Password Generator Gacha</h1>
+        
+        <div class="crate-container">
+            <div class="crate" id="crate">
+                <div class="crate-icon">📦</div>
+            </div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <div class="controls">
+            <button class="gacha-button" id="gachaBtn">Buka Crate!</button>
+            <button id="resetBtn">Reset Password</button>
+            <button id="copyBtn">Copy Password</button>
+        </div>
+        
+        <div class="password-display">
+            <h3>Password Anda:</h3>
+            <div class="password-text" id="passwordText">Klik "Buka Crate" untuk mulai gacha!</div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalGacha">0</div>
+                <div>Total Gacha</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="commonCount">0</div>
+                <div>Common</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="rareCount">0</div>
+                <div>Rare</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="epicCount">0</div>
+                <div>Epic</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="legendaryCount">0</div>
+                <div>Legendary</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="character-reveal" id="characterReveal">
+        <div class="reveal-content">
+            <button class="close-button" id="closeReveal">×</button>
+            <div class="rarity-text" id="rarityText"></div>
+            
+            <div class="roulette-container" id="rouletteContainer">
+                <div class="roulette-pointer"></div>
+                <div class="roulette-wheel" id="rouletteWheel"></div>
+            </div>
+            
+            <div class="character-display" id="characterDisplay"></div>
+            <button id="addToPassword">Tambah ke Password</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
